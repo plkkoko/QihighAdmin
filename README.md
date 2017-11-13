@@ -24,3 +24,9 @@
 删除views目录，及routes目录下的文件，并重新在public目录下创建空的index.html。
 
 以此环境作为后续部署aceadmin框架，以及开发WebAPI的基础。
+
+4. 原版aceadmin框架部署。
+
+[public](public/)目录下为aceadmin原1.4英文版的框架源码。启动应用后即可查看框架运行效果。
+
+有兴趣的同学可以直接下载该目录下文件做前端开发。
