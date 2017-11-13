@@ -17,3 +17,8 @@
 
 应用启动的默认端口号为443。
 
+3. 去除express默认的view模板，以及默认的路由。
+
+删除views目录，及routes目录下的文件，并重新在public目录下创建空的index.html。
+
+以此环境作为后续部署aceadmin框架，以及开发WebAPI的基础。
