@@ -37,18 +37,18 @@ var app = angular
 				return $ocLazyLoad.load([{
 						name: 'angular-flot',
 						serie: true,
-						files: ['../components/Flot/jquery.flot.js',
-						'../components/Flot/jquery.flot.pie.js',
-						'../components/Flot/jquery.flot.resize.js',
-						'../components/angular-flot/angular-flot.js']
+						files: ['components/Flot/jquery.flot.js',
+						'components/Flot/jquery.flot.pie.js',
+						'components/Flot/jquery.flot.resize.js',
+						'components/angular-flot/angular-flot.js']
 					},
 					{
 						name: 'easypiechart',
-						files: ['../components/_mod/easypiechart/angular.easypiechart.js']
+						files: ['components/_mod/easypiechart/angular.easypiechart.js']
 					},
 					{
 						name: 'sparkline',
-						files: ['../components/jquery.sparkline/index.js']
+						files: ['components/jquery.sparkline/index.js']
 					},
 					{
 						name: 'AceApp',
@@ -77,7 +77,7 @@ var app = angular
 			lazyLoad: ['$ocLazyLoad', function($ocLazyLoad) {
 				return $ocLazyLoad.load([{
 						name: 'prettify',
-						files: ['../components/_mod/google-code-prettify/prettify.css',	'../components/google-code-prettify/src/prettify.js']
+						files: ['components/_mod/google-code-prettify/prettify.css',	'components/google-code-prettify/src/prettify.js']
 					}]);
 			}]
 		}
@@ -93,25 +93,25 @@ var app = angular
 			lazyLoad: ['$ocLazyLoad', function($ocLazyLoad) {
 				return $ocLazyLoad.load([{
 						name: 'bootbox',
-						files: ['../components/bootbox.js/bootbox.js']
+						files: ['components/bootbox.js/bootbox.js']
 					},
 					{
 						name: 'easypiechart',
-						files: ['../components/_mod/easypiechart/angular.easypiechart.js']
+						files: ['components/_mod/easypiechart/angular.easypiechart.js']
 					},
 					{
 						name: 'gritter',
-						files: ['../components/jquery.gritter/js/jquery.gritter.js']
+						files: ['components/jquery.gritter/js/jquery.gritter.js']
 					},
 					{
 						serie: true,
 						name: 'ui.slider',
-						files: ['../components/_mod/jquery-ui.custom/jquery-ui.custom.js', '../components/jqueryui-touch-punch/jquery.ui.touch-punch.js', '../components/angular-ui-slider/src/slider.js']
+						files: ['components/_mod/jquery-ui.custom/jquery-ui.custom.js', 'components/jqueryui-touch-punch/jquery.ui.touch-punch.js', 'components/angular-ui-slider/src/slider.js']
 					},
 					{
 						serie: true,
 						name: 'angularSpinner',
-						files: ['../components/spin.js/spin.js',	'../components/spin.js/jquery.spin.js', '../components/angular-spinner/angular-spinner.js']
+						files: ['components/spin.js/spin.js',	'components/spin.js/jquery.spin.js', 'components/angular-spinner/angular-spinner.js']
 					},
 					{
 						name: 'AceApp',
@@ -121,8 +121,8 @@ var app = angular
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
 						files: [
-							'../components/jquery.gritter/css/jquery.gritter.css',
-							'../components/_mod/jquery-ui.custom/jquery-ui.custom.css',
+							'components/jquery.gritter/css/jquery.gritter.css',
+							'components/_mod/jquery-ui.custom/jquery-ui.custom.css',
 							'css/pages/elements.css'
 							]
 					}]);
@@ -156,7 +156,7 @@ var app = angular
 			lazyLoad: ['$ocLazyLoad', function($ocLazyLoad) {
 				return $ocLazyLoad.load([{
 						name: 'ngAside',
-						files: ['../components/angular-aside/dist/js/angular-aside.js']
+						files: ['components/angular-aside/dist/js/angular-aside.js']
 					},
 					{
 						name: 'AceApp',
@@ -165,7 +165,7 @@ var app = angular
 					{
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
-						files: ['../components/angular-aside/dist/css/angular-aside.css']
+						files: ['components/angular-aside/dist/css/angular-aside.css']
 					}]);
 			}]
 		}
@@ -180,7 +180,7 @@ var app = angular
 			lazyLoad: ['$ocLazyLoad', function($ocLazyLoad) {
 				return $ocLazyLoad.load([{
 						name: 'treeControl',
-						files: ['../components/angular-tree-control/angular-tree-control.js']
+						files: ['components/angular-tree-control/angular-tree-control.js']
 					},
 					{
 						name: 'AceApp',
@@ -199,7 +199,7 @@ var app = angular
 			lazyLoad: ['$ocLazyLoad', function($ocLazyLoad) {
 				return $ocLazyLoad.load([{
 						name: 'ngNestable',
-						files: ['../components/_mod/jquery.nestable/jquery.nestable.js', '../components/angular-nestable/src/angular-nestable.js']
+						files: ['components/_mod/jquery.nestable/jquery.nestable.js', 'components/angular-nestable/src/angular-nestable.js']
 					},
 					{
 						name: 'AceApp',
@@ -224,7 +224,7 @@ var app = angular
 					{
 						serie: true,
 						name: 'dataTables',
-						files: ['../components/datatables/media/js/jquery.dataTables.js', '../components/_mod/datatables/jquery.dataTables.bootstrap.js', '../components/angular-datatables/dist/angular-datatables.js']
+						files: ['components/datatables/media/js/jquery.dataTables.js', 'components/_mod/datatables/jquery.dataTables.bootstrap.js', 'components/angular-datatables/dist/angular-datatables.js']
 					},					
 					{
 						name: 'AceApp',
@@ -254,76 +254,76 @@ var app = angular
 					{
 						serie: true,
 						name: 'ui.slider',
-						files: ['../components/_mod/jquery-ui.custom/jquery-ui.custom.js', '../components/jqueryui-touch-punch/jquery.ui.touch-punch.js', '../components/angular-ui-slider/src/slider.js']
+						files: ['components/_mod/jquery-ui.custom/jquery-ui.custom.js', 'components/jqueryui-touch-punch/jquery.ui.touch-punch.js', 'components/angular-ui-slider/src/slider.js']
 					},
 					
 					{
 						name: 'text_area',
-						files: ['../components/jquery-inputlimiter/jquery.inputlimiter.js', '../components/angular-elastic/elastic.js']
+						files: ['components/jquery-inputlimiter/jquery.inputlimiter.js', 'components/angular-elastic/elastic.js']
 					},
 					
 					{
 						name: 'mask',
-						files: ['../components/angular-ui-mask/dist/mask.js']
+						files: ['components/angular-ui-mask/dist/mask.js']
 					},
 					
 					{
 						name: 'chosen',
-						files: ['../components/chosen/chosen.jquery.js', '../components/angular-chosen-localytics/chosen.js']
+						files: ['components/chosen/chosen.jquery.js', 'components/angular-chosen-localytics/chosen.js']
 					},
 					
 					{
 						name: 'spinner',
-						files: ['../components/fuelux/js/spinbox.js']
+						files: ['components/fuelux/js/spinbox.js']
 					},
 
 					{
 						name: 'datepicker',
-						files: ['../components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js']
+						files: ['components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js']
 					},
 					
 					{
 						serie: true,
 						name: 'daterange',
-						files: ['../components/moment/moment.js', '../components/bootstrap-daterangepicker/daterangepicker.js', '../components/angular-daterangepicker/js/angular-daterangepicker.js']
+						files: ['components/moment/moment.js', 'components/bootstrap-daterangepicker/daterangepicker.js', 'components/angular-daterangepicker/js/angular-daterangepicker.js']
 					},
 					
 					{
 						name: 'timepicker',
-						files: ['../components/bootstrap-timepicker/js/bootstrap-timepicker.js']
+						files: ['components/bootstrap-timepicker/js/bootstrap-timepicker.js']
 					},
 					
 					{
 						serie: true,
 						name: 'datetimepicker',
-						files: ['../components/moment/moment.js', '../components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js']
+						files: ['components/moment/moment.js', 'components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js']
 					},
 					
 					{
 						name: 'colorpicker',
-						files: ['../components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js', '../components/angular-bootstrap-colorpicker/css/colorpicker.css']
+						files: ['components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js', 'components/angular-bootstrap-colorpicker/css/colorpicker.css']
 					},
 					
 					{
 						name: 'knob',
-						files: ['../components/jquery-knob/js/jquery.knob.js', '../components/angular-knob/src/angular-knob.js']
+						files: ['components/jquery-knob/js/jquery.knob.js', 'components/angular-knob/src/angular-knob.js']
 					},
 					
 					
 					{
 						serie: true,
 						name: 'typeahead',
-						files: ['../components/typeahead.js/dist/bloodhound.js', '../components/typeahead.js/dist/typeahead.jquery.js', '../components/angular-typeahead/angular-typeahead.js']
+						files: ['components/typeahead.js/dist/bloodhound.js', 'components/typeahead.js/dist/typeahead.jquery.js', 'components/angular-typeahead/angular-typeahead.js']
 					},
 					
 					{
 						name: 'multiselect',
-						files: ['../components/angular-bootstrap-multiselect/angular-bootstrap-multiselect.js']
+						files: ['components/angular-bootstrap-multiselect/angular-bootstrap-multiselect.js']
 					},
 					
 					{
 						name: 'select2',
-						files: ['../components/ui-select/dist/select.js']
+						files: ['components/ui-select/dist/select.js']
 					},
 					
 					
@@ -337,13 +337,13 @@ var app = angular
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
 						files: [
-								'../components/chosen/chosen.css',
-								'../components/_mod/jquery-ui.custom/jquery-ui.custom.css',
-								'../components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
-								'../components/bootstrap-timepicker/css/bootstrap-timepicker.css',
-								'../components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
-								'../components/bootstrap-daterangepicker/daterangepicker.css',
-								'../components/select2.v3/select2.css'
+								'components/chosen/chosen.css',
+								'components/_mod/jquery-ui.custom/jquery-ui.custom.css',
+								'components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
+								'components/bootstrap-timepicker/css/bootstrap-timepicker.css',
+								'components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
+								'components/bootstrap-daterangepicker/daterangepicker.css',
+								'components/select2.v3/select2.css'
 								]
 					}]);
 			}]
@@ -359,22 +359,22 @@ var app = angular
 			lazyLoad: ['$ocLazyLoad', function($ocLazyLoad) {
 				return $ocLazyLoad.load([{
 						name: 'ngMessages',
-						files: ['../components/angular-messages/angular-messages.js']
+						files: ['components/angular-messages/angular-messages.js']
 					},
 					
 					{
 						name: 'wizard',
-						files: ['../components/angular-wizard/dist/angular-wizard.js']
+						files: ['components/angular-wizard/dist/angular-wizard.js']
 					},
 					
 					{
 						name: 'mask',
-						files: ['../components/angular-ui-mask/dist/mask.js']
+						files: ['components/angular-ui-mask/dist/mask.js']
 					},
 					
 					{
 						name: 'chosen',
-						files: ['../components/chosen/chosen.jquery.js', '../components/angular-chosen-localytics/chosen.js']
+						files: ['components/chosen/chosen.jquery.js', 'components/angular-chosen-localytics/chosen.js']
 					},
 					
 					{
@@ -384,7 +384,7 @@ var app = angular
 					{
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
-						files: ['../components/chosen/chosen.css']
+						files: ['components/chosen/chosen.css']
 					}]);
 			}]
 		}
@@ -404,14 +404,14 @@ var app = angular
 						name: 'wysiwyg',
 						serie: true,
 						files: [
-								'../components/bootstrap/js/dropdown.js',//for wysiwyg dropdowns
-								'../components/jquery.hotkeys/index.js',
-								'../components/_mod/bootstrap-wysiwyg/bootstrap-wysiwyg.js']
+								'components/bootstrap/js/dropdown.js',//for wysiwyg dropdowns
+								'components/jquery.hotkeys/index.js',
+								'components/_mod/bootstrap-wysiwyg/bootstrap-wysiwyg.js']
 					},
 					
 					{
 						name: 'markdown',
-						files: ['../components/markdown/lib/markdown.js','../components/bootstrap-markdown/js/bootstrap-markdown.js']
+						files: ['components/markdown/lib/markdown.js','components/bootstrap-markdown/js/bootstrap-markdown.js']
 					},
 					
 					{
@@ -437,7 +437,7 @@ var app = angular
 					{
 						name: 'dropzone',
 						serie: true,
-						files: ['../components/dropzone/dist/dropzone.js', '../components/angular-dropzone/lib/angular-dropzone.js']
+						files: ['components/dropzone/dist/dropzone.js', 'components/angular-dropzone/lib/angular-dropzone.js']
 					},
 					
 					{
@@ -448,7 +448,7 @@ var app = angular
 					{
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
-						files: ['../components/dropzone/dist/dropzone.css']
+						files: ['components/dropzone/dist/dropzone.css']
 					}
 				]);
 			}]
@@ -470,7 +470,7 @@ var app = angular
 					{
 						serie: true,
 						name: 'sortable',
-						files: ['../components/_mod/jquery-ui.custom/jquery-ui.custom.js', '../components/jqueryui-touch-punch/jquery.ui.touch-punch.js']
+						files: ['components/_mod/jquery-ui.custom/jquery-ui.custom.js', 'components/jqueryui-touch-punch/jquery.ui.touch-punch.js']
 					},
 										
 					{
@@ -501,18 +501,18 @@ var app = angular
 					{
 						serie: true,
 						name: 'calendar',
-						files: ['../components/moment/moment.js', '../components/fullcalendar/dist/fullcalendar.js', '../components/angular-ui-calendar/src/calendar.js']
+						files: ['components/moment/moment.js', 'components/fullcalendar/dist/fullcalendar.js', 'components/angular-ui-calendar/src/calendar.js']
 					},
 					
 					{
 						serie: true,
 						name: 'drag',
-						files: ['../components/_mod/jquery-ui.custom/jquery-ui.custom.js', '../components/jqueryui-touch-punch/jquery.ui.touch-punch.js', '../components/angular-dragdrop/src/angular-dragdrop.js']
+						files: ['components/_mod/jquery-ui.custom/jquery-ui.custom.js', 'components/jqueryui-touch-punch/jquery.ui.touch-punch.js', 'components/angular-dragdrop/src/angular-dragdrop.js']
 					},			
 					
 					{
 						name: 'bootbox',
-						files: ['../components/bootbox.js/bootbox.js']
+						files: ['components/bootbox.js/bootbox.js']
 					},
 					
 					{
@@ -523,7 +523,7 @@ var app = angular
 					{
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
-						files: ['../components/fullcalendar/dist/fullcalendar.css']
+						files: ['components/fullcalendar/dist/fullcalendar.css']
 					}
 				]);
 			}]
@@ -544,7 +544,7 @@ var app = angular
 				return $ocLazyLoad.load([
 					{
 						name: 'gallery',
-						files: ['../components/jquery-colorbox/jquery.colorbox.js', '../components/angular-colorbox/js/angular-colorbox.js']
+						files: ['components/jquery-colorbox/jquery.colorbox.js', 'components/angular-colorbox/js/angular-colorbox.js']
 					},
 					
 					{
@@ -555,7 +555,7 @@ var app = angular
 					{
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
-						files: ['../components/jquery-colorbox/example1/colorbox.css']
+						files: ['components/jquery-colorbox/example1/colorbox.css']
 					}
 				]);
 			}]
@@ -584,24 +584,24 @@ var app = angular
 					{
 						name: 'datepicker',
 						serie: true,
-						files: ['../components/moment/moment.js', '../components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js']
+						files: ['components/moment/moment.js', 'components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js']
 					},
 					
 					{
 						name: 'spinner',
-						files: ['../components/fuelux/js/spinbox.js']
+						files: ['components/fuelux/js/spinbox.js']
 					},
 					
 					{
 						serie: true,
 						name: 'jquery-ui',
-						files: ['../components/_mod/jquery-ui.custom/jquery-ui.custom.js', '../components/jqueryui-touch-punch/jquery.ui.touch-punch.js']
+						files: ['components/_mod/jquery-ui.custom/jquery-ui.custom.js', 'components/jqueryui-touch-punch/jquery.ui.touch-punch.js']
 					},
 					
 					{
 						name: 'x-editable',	
 						serie: true,
-						files: ['../components/_mod/x-editable/bootstrap-editable.js', '../components/_mod/x-editable/ace-editable.js']
+						files: ['components/_mod/x-editable/bootstrap-editable.js', 'components/_mod/x-editable/ace-editable.js']
 					},
 					
 					{
@@ -612,9 +612,9 @@ var app = angular
 					{
 						name: 'AceApp',
 						insertBefore: '#main-ace-style',
-						files: ['../components/_mod/jquery-ui.custom/jquery-ui.custom.css',
-								'../components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
-								'../components/_mod/x-editable/bootstrap-editable.css']
+						files: ['components/_mod/jquery-ui.custom/jquery-ui.custom.css',
+								'components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css',
+								'components/_mod/x-editable/bootstrap-editable.css']
 					}
 				]);
 			}]
