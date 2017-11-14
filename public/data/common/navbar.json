@@ -2,21 +2,21 @@
 	"tasks": {
 		"count": 4,
 		"latest": [{
-			"title": "Software Update",
+			"title": "软件更新",
 			"percentage": 65
 		},
 		{
-			"title": "Hardware Upgrade",
+			"title": "硬件升级",
 			"percentage": 35,
 			"progress-bar-type": "danger"
 		},
 		{
-			"title": "Unit Testing",
+			"title": "单元测试",
 			"percentage": 15,
 			"progress-bar-type": "warning"
 		},
 		{
-			"title": "Bug Fixes",
+			"title": "缺陷修复",
 			"percentage": 90,
 			"progress-class": "progress-striped active",
 			"progress-bar-type": "success"
@@ -26,26 +26,26 @@
 	"notifications": {
 		"count": 8,
 		"latest": [{
-			"title": "New Comments",
+			"title": "新事项",
 			"icon": "fa fa-comment",
 			"icon-class": "btn-pink",
 			"badge": "+12",
 			"badge-class": "badge-info"
 		},
 		{
-			"title": "Bob just signed up as an editor ...",
+			"title": "Bob刚刚以作者身份登录...",
 			"icon": "fa fa-user",
 			"icon-class": "btn-primary"
 		},
 		{
-			"title": "New Orders",
+			"title": "新订单",
 			"icon": "fa fa-shopping-cart",
 			"icon-class": "btn-success",
 			"badge": "+8",
 			"badge-class": "badge-success"
 		},
 		{
-			"title": "Followers",
+			"title": "关注",
 			"icon": "fa fa-twitter",
 			"icon-class": "btn-info",
 			"badge": "+11",
@@ -58,32 +58,32 @@
 		"latest": [{
 			"name": "Alex",
 			"img": "avatar.png",
-			"time": "a moment ago",
-			"summary": "Ciao sociis natoque penatibus et auctor ..."
+			"time": "刚刚",
+			"summary": "最新一则消息 ..."
 		},
 		{
 			"name": "Susan",
 			"img": "avatar3.png",
-			"time": "20 minutes ago",
-			"summary": "Vestibulum id ligula porta felis euismod ..."
+			"time": "20分钟前",
+			"summary": "20分钟前的消息 ..."
 		},
 		{
 			"name": "Bob",
 			"img": "avatar4.png",
-			"time": "3:15 pm",
-			"summary": "Nullam quis risus eget urna mollis ornare ..."
+			"time": "15:15",
+			"summary": "下午3点多的消息 ..."
 		},
 		{
 			"name": "Kate",
 			"img": "avatar2.png",
-			"time": "1:33 pm",
-			"summary": "Ciao sociis natoque eget urna mollis ornare ..."
+			"time": "13:33",
+			"summary": "下午1点多的消息 ..."
 		},
 		{
 			"name": "Fred",
 			"img": "avatar5.png",
-			"time": "10:09 am",
-			"summary": "Vestibulum id penatibus et auctor  ..."
+			"time": "10:09",
+			"summary": "上午10点多的消息..."
 		}]
 	}
 }

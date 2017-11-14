@@ -1,38 +1,36 @@
 
-angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http, $rootScope) {
-	
+angular.module('AceApp').controller('FormCtrl', function ($scope, $timeout, $http, $rootScope) {
+
 	$scope.$sliders = [77, 55, 33, 40, 88];//jQuery UI slider ng-models
-	
+
 	$scope.inputSizing = ['', 'input-sm', 'input-lg', 'input-mini', 'input-small', 'input-medium', 'input-large', 'input-xlarge', 'input-xxlarge'];
 	//the slider models used when resizing input elements
 	$scope.$inputSize = 1;
 	$scope.$inputGrid = 1;
-		
-	
+
+
 	//text limiter options
 	$scope.text_limiter = {
 		remText: '%n character%s remaining...',
 		limitText: 'max allowed : %n.'
 	};
-	
+
 	//spinner options
 	$scope.$spinner = [
-		{value:0, min:0, max:200, step:10, btn_up_class:'btn-info', btn_down_class:'btn-info'},
-		{value:0,min:0,max:10000,step:100, touch_spinner: true, icon_up:'ace-icon fa fa-caret-up bigger-110', icon_down:'ace-icon fa fa-caret-down bigger-110'},
-		{value:0,min:-100,max:100,step:10, on_sides: true, icon_up:'ace-icon fa fa-plus bigger-110', icon_down:'ace-icon fa fa-minus bigger-110', btn_up_class:'btn-success' , btn_down_class:'btn-danger'},
-		{value:0,min:-100,max:100,step:10, on_sides: true, icon_up:'ace-icon fa fa-plus', icon_down:'ace-icon fa fa-minus', btn_up_class:'btn-purple' , btn_down_class:'btn-purple'}
+		{ value: 0, min: 0, max: 200, step: 10, btn_up_class: 'btn-info', btn_down_class: 'btn-info' },
+		{ value: 0, min: 0, max: 10000, step: 100, touch_spinner: true, icon_up: 'ace-icon fa fa-caret-up bigger-110', icon_down: 'ace-icon fa fa-caret-down bigger-110' },
+		{ value: 0, min: -100, max: 100, step: 10, on_sides: true, icon_up: 'ace-icon fa fa-plus bigger-110', icon_down: 'ace-icon fa fa-minus bigger-110', btn_up_class: 'btn-success', btn_down_class: 'btn-danger' },
+		{ value: 0, min: -100, max: 100, step: 10, on_sides: true, icon_up: 'ace-icon fa fa-plus', icon_down: 'ace-icon fa fa-minus', btn_up_class: 'btn-purple', btn_down_class: 'btn-purple' }
 	];
 	//model for spinner input
 	$scope.spinVal = 0;
-	
-
 
 	//datepicker value and options
 	$scope.datePicker = {
 		value: null,
 		range: null,
-		opts:	{
-			format: 'mm-dd-yyyy',
+		opts: {
+			format: 'yyyy年mm月dd日',
 			autoclose: true,
 			todayHighlight: true
 		}
@@ -42,18 +40,17 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 	$scope.dateRange = {
 		values: {
 			startDate: null,
-			endDate: null	
+			endDate: null
 		},
 		opts: {
 			drops: 'up'
 		}
 	};
-	
-	
+
 	//time picker value and options
 	$scope.timePicker = {
 		value: null,
-		opts : {
+		opts: {
 			minuteStep: 1,
 			showSeconds: true,
 			showMeridian: false,
@@ -64,8 +61,7 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 			}
 		}
 	};
-	
-	
+
 	//date time picker value and options
 	$scope.dateTimePicker = {
 		value: null,
@@ -84,7 +80,7 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 			}
 		}
 	};
-	
+
 
 	//colorpicker
 	$scope.colorPicker = {
@@ -104,7 +100,7 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 			thickness: 0.2
 		}
 	};
-	
+
 	$scope.knob2 = {
 		value: 41,
 		opts: {
@@ -120,7 +116,7 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 			angleOffset: -125
 		}
 	};
-	
+
 	$scope.knob3 = {
 		value: 1,
 		opts: {
@@ -129,7 +125,7 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 			step: 1,
 			width: 150,
 			height: 150,
-			thickness: 0.2	,
+			thickness: 0.2,
 			fgColor: "#B8877F",
 			angleOffset: 90,
 			cursor: true
@@ -143,28 +139,28 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 	$scope.max = 10;
 	$scope.isReadonly = false;
 
-	$scope.hoveringOver = function(value) {
+	$scope.hoveringOver = function (value) {
 		$scope.overStar = value;
 		$scope.percent = 100 * (value / $scope.max);
 	};
 
 	$scope.ratingStates = [
-		{stateOn: 'glyphicon-ok-sign', stateOff: 'glyphicon-ok-circle'}
+		{ stateOn: 'glyphicon-ok-sign', stateOff: 'glyphicon-ok-circle' }
 	];
 
 	$scope.rating = {
 		on: 'fa fa-star orange2 bigger-150',
 		off: 'fa fa-star-o grey  bigger-150'
 	};
-  
-  
+
+
 	//////////
 
 	//Twitter typeahead
 	$scope.typeahead = null;
 	// Instantiate the bloodhound suggestion engine
 	var states = new Bloodhound({
-		datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.name) },
+		datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name) },
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
 		local: $rootScope.getCommonData('states')
 	});
@@ -182,22 +178,22 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 		displayKey: 'name',
 		source: states.ttAdapter()
 	};
-	
+
 	//update typeahead when data becomes avaiable
-	var unbind = $rootScope.$watch("getCommonData('states')", function(newValue) {
-		  if(!newValue) return;
-		  unbind();
-		  
-		  states = new Bloodhound({
-			datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.name) },
+	var unbind = $rootScope.$watch("getCommonData('states')", function (newValue) {
+		if (!newValue) return;
+		unbind();
+
+		states = new Bloodhound({
+			datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name) },
 			queryTokenizer: Bloodhound.tokenizers.whitespace,
 			local: newValue
-		  });
-		  states.initialize();
-		  $scope.typeaheadData = {
+		});
+		states.initialize();
+		$scope.typeaheadData = {
 			displayKey: 'name',
 			source: states.ttAdapter()
-		  };
+		};
 	});
 
 
@@ -210,24 +206,24 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 		"Pepperoni"
 	];
 	$scope.multiselectModel = [];
-	
-	
+
+
 	//Select2
-	$scope.availableColors = ['Red','Green','Blue','Yellow','Magenta','Maroon','Umbra','Turquoise'];
+	$scope.availableColors = ['Red', 'Green', 'Blue', 'Yellow', 'Magenta', 'Maroon', 'Umbra', 'Turquoise'];
 	$scope.select2Color = null;
 
-	
+
 	///////
 	//file input properties
 	$scope.fileInputOptions1 = {
-		no_file:'No File ...',
-		btn_choose:'Choose',
-		btn_change:'Change',
-		droppable:false,
-		onchange:null,
-		thumbnail:false
+		no_file: 'No File ...',
+		btn_choose: 'Choose',
+		btn_change: 'Change',
+		droppable: false,
+		onchange: null,
+		thumbnail: false
 	};
-	
+
 	$scope.fileInputOptions2 = {
 		style: 'well',
 		btn_choose: 'Drop files here or click to choose',
@@ -236,37 +232,37 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
 		droppable: true,
 		thumbnail: 'small'
 	};
-	
+
 	//update file input settings when we select 'picture only'
 	$scope.pictureOnly = false;
-	$scope.$watch('pictureOnly', function(newValue, oldValue) {
-		if(newValue) {
+	$scope.$watch('pictureOnly', function (newValue, oldValue) {
+		if (newValue) {
 			$scope.fileInputOptions2 = {
 				'btn_choose': "Drop images here or click to choose",
 				'no_icon': "ace-icon fa fa-picture-o",
-				'allowExt': ["jpeg", "jpg", "png", "gif" , "bmp"],
+				'allowExt': ["jpeg", "jpg", "png", "gif", "bmp"],
 				'allowMime': ["image/jpg", "image/jpeg", "image/png", "image/gif", "image/bmp"]
 			};
 		}
 		else {
 			$scope.fileInputOptions2 = {
-				'btn_choose' : "Drop files here or click to choose",
-				'no_icon' : "ace-icon fa fa-cloud-upload",
-				'whitelist_ext' : null,
-				'whitelist_mime' : null
+				'btn_choose': "Drop files here or click to choose",
+				'no_icon': "ace-icon fa fa-cloud-upload",
+				'whitelist_ext': null,
+				'whitelist_mime': null
 			};
 		}
 	});
-	
+
 	//file input models
 	$scope.files1 = null;//will contain a list of File objects
 	$scope.files2 = null;//will contain a list of File objects
 	$scope.fileInputProps1 = {};//file input properties, such as 'loading'm 'reset_button', etc ...
-	
-	
+
+
 	//callback when file selection has changed
-	$scope.fileChanged = function() {
-		if(!$scope.files1) return;
+	$scope.fileChanged = function () {
+		if (!$scope.files1) return;
 
 		//example for uploading file
 		/**
@@ -290,12 +286,12 @@ angular.module('AceApp').controller('FormCtrl', function($scope, $timeout, $http
         });
 		*/
 	};
-	
+
 	/**
 	$timeout(function() {
 		$scope.files1 = null;//will reset file input
 	});
 	*/
 
-	
+
 });

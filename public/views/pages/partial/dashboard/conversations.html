@@ -8,7 +8,7 @@
 			<div class="time"><i class="ace-icon fa fa-clock-o"></i> <span class="{{item['time-color']}}" ng-bind="item.time"></span></div>
 			<div class="name">
 				<a href="" ng-bind="item.name"></a>
-				<span ng-if="item.admin" class="label label-info arrowed arrowed-in-right">admin</span>
+				<span ng-if="item.admin" class="label label-info arrowed arrowed-in-right">管理员</span>
 			</div>
 			<div class="text" ng-bind="item.message"></div>
 			
@@ -22,9 +22,9 @@
 <form>
  <div class="form-actions">
 	<div class="input-group">
-		<input placeholder="Type your message here ..." type="text" class="form-control" name="message" />
+		<input placeholder="输入聊天内容..." type="text" class="form-control" name="message" />
 		<span class="input-group-btn">
-			<button class="btn btn-sm btn-info no-radius" type="button"><i class="ace-icon fa fa-share"></i> Send</button>
+			<button class="btn btn-sm btn-info no-radius" type="button"><i class="ace-icon fa fa-share"></i>发送</button>
 		</span>
 	</div>
   </div>

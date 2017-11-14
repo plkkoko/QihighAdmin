@@ -1,6 +1,6 @@
-angular.module('AceApp').controller('WysiwygCtrl', ['$scope', '$timeout', function($scope, $timeout ) {
+angular.module('AceApp').controller('WysiwygCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
 
-  $scope.html_content = '<h2>Edit wysiwyg!</h2>';
+	$scope.html_content = '<h2>Edit wysiwyg!</h2>';
 
   /**
   $scope.wysi_opts = {
@@ -20,9 +20,9 @@ angular.module('AceApp').controller('WysiwygCtrl', ['$scope', '$timeout', functi
 		speech_button: false
   }
   */
-  
-  $scope.markdown_content = '**Edit markdown!**';
-  
+
+	$scope.markdown_content = '**Edit markdown!**';
+
 }]);
 
 

@@ -2,33 +2,33 @@
 	{
 		"id": "customer-support",
 		"color": "orange",
-		"title": "Answering customer questions",
+		"title": "回复客户问题",
 		"progress": 42
 	},
 	{
 		"color": "red",
-		"title": "Fixing bugs",
+		"title": "修复Bug",
 		"toolbar": true
 	},
 	{
 		"color": "default",
-		"title": "Adding new features",
+		"title": "增加新功能",
 		"menu": true
 	},
 	{
 		"color": "blue",
-		"title": "Upgrading scripts used in template"
+		"title": "更新模板脚本"
 	},
 	{
 		"color": "grey",
-		"title": "Adding new skins"
+		"title": "添加新的皮肤"
 	},
 	{
 		"color": "green",
-		"title": "Updating server software up"
+		"title": "更新服务器软件"
 	},
 	{
 		"color": "pink",
-		"title": "Cleaning up"
+		"title": "清理"
 	}
 ]

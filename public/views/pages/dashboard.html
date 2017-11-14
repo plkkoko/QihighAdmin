@@ -1,12 +1,12 @@
 <div class="page-header">
-	<h1>Dashboard <small><i class="ace-icon fa fa-angle-double-right"></i> overview &amp; stats</small></h1>
+	<h1>仪表板<small><i class="ace-icon fa fa-angle-double-right"></i>概述及统计</small></h1>
 </div>
 
 <div class="row"><div class="col-xs-12">
 
  <uib-alert type="success" close="alert.close()" ng-if="alert.shown">
-	<i class="ace-icon fa fa-check green"></i> Welcome to <strong class="green">Ace <small>(v<span ng-bind="::ace.site.version"></span>)</small></strong>,
-	the lightweight, feature-rich and easy to use admin template.
+	<i class="ace-icon fa fa-check green"></i>欢迎了解<strong class="green">Ace <small>(v<span ng-bind="::ace.site.version"></span>)</small></strong>
+	这款轻量级，功能丰富，且易于上手的管理界面。
  </uib-alert>
 
 
@@ -26,21 +26,21 @@
   <div class="col-sm-5">
    	<div class="widget-box">
 		<div class="widget-header widget-header-flat widget-header-small">
-			<h5 class="widget-title"><i class="ace-icon fa fa-signal"></i> Traffic Sources</h5>
+			<h5 class="widget-title"><i class="ace-icon fa fa-signal"></i> 成交来源</h5>
 			<div class="widget-toolbar no-border">
 			 <div class="inline dropdown-hover">
 				<button class="btn btn-minier btn-primary">
-					This Week <i class="ace-icon fa fa-angle-down icon-on-right bigger-110"></i>
+					本周 <i class="ace-icon fa fa-angle-down icon-on-right bigger-110"></i>
 				</button>
 				<ul class="dropdown-menu dropdown-menu-right dropdown-125 dropdown-lighter dropdown-close dropdown-caret">
 					<li class="active">
 						<a href="" class="blue">
-							<i class="ace-icon fa fa-caret-right bigger-110">&nbsp;</i> This Week
+							<i class="ace-icon fa fa-caret-right bigger-110">&nbsp;</i> 本周
 						</a>
 					</li>
-					<li><a href=""><i class="ace-icon fa fa-caret-right bigger-110 invisible">&nbsp;</i> Last Week</a></li>
-					<li><a href=""><i class="ace-icon fa fa-caret-right bigger-110 invisible">&nbsp;</i> This Month</a></li>
-					<li><a href=""><i class="ace-icon fa fa-caret-right bigger-110 invisible">&nbsp;</i> Last Month</a></li>
+					<li><a href=""><i class="ace-icon fa fa-caret-right bigger-110 invisible">&nbsp;</i> 上周</a></li>
+					<li><a href=""><i class="ace-icon fa fa-caret-right bigger-110 invisible">&nbsp;</i> 本月</a></li>
+					<li><a href=""><i class="ace-icon fa fa-caret-right bigger-110 invisible">&nbsp;</i> 上月</a></li>
 				</ul>
 			 </div>
 			</div>
@@ -54,17 +54,17 @@
 			
 			<div class="clearfix">
 				<div class="grid3">
-					<span class="grey"><i class="ace-icon fa fa-facebook-square fa-2x blue"></i> &nbsp; likes</span>
+					<span class="grey"><i class="ace-icon fa fa-facebook-square fa-2x blue"></i> &nbsp; 脸书</span>
 					<h4 class="bigger pull-right">1,255</h4>
 				</div>
 				
 				<div class="grid3">
-					<span class="grey"><i class="ace-icon fa fa-twitter-square fa-2x purple"></i> &nbsp; tweets</span>
+					<span class="grey"><i class="ace-icon fa fa-twitter-square fa-2x purple"></i> &nbsp; 推特</span>
 					<h4 class="bigger pull-right">941</h4>
 				</div>
 				
 				<div class="grid3">
-					<span class="grey"><i class="ace-icon fa fa-pinterest-square fa-2x red"></i> &nbsp; pins</span>
+					<span class="grey"><i class="ace-icon fa fa-pinterest-square fa-2x red"></i> &nbsp; 品趣思</span>
 					<h4 class="bigger pull-right">1,050</h4>
 				</div>
 			</div>
@@ -85,7 +85,7 @@
 			<div class="widget-header widget-header-flat">
 				<h4 class="widget-title lighter">
 					<i class="ace-icon fa fa-star orange"></i>
-					Popular Domains
+					热门域名
 				</h4>
 				<div class="widget-toolbar">
 					<a href="" data-action="collapse">
@@ -106,7 +106,7 @@
 	<div class="col-sm-7">
 	  <div widget-box class="widget-box transparent">
 		<div class="widget-header widget-header-flat">
-			<h4 class="widget-title lighter"><i class="ace-icon fa fa-signal"></i> Sale Stats</h4>
+			<h4 class="widget-title lighter"><i class="ace-icon fa fa-signal"></i> 销售统计</h4>
 			<div class="widget-toolbar">
 				<a href="" data-action="collapse"><i class="ace-icon fa fa-chevron-up"></i></a>
 			</div>
@@ -134,12 +134,12 @@
 	<div class="widget-box transparent" id="recent-box">
 		
 		<div class="widget-header">
-			<h4 class="widget-title lighter smaller"><i class="ace-icon fa fa-rss orange"></i>RECENT</h4>
+			<h4 class="widget-title lighter smaller"><i class="ace-icon fa fa-rss orange"></i>近期</h4>
 			<div class="widget-toolbar no-border">
 				<uib-tabset id="recent-tab-list" ng-show="tabShown">
-					<uib-tab select="setActiveTab(0)" heading="Tasks"></uib-tab>
-					<uib-tab select="setActiveTab(1)" heading="Members"></uib-tab>
-					<uib-tab select="setActiveTab(2)" heading="Comments"></uib-tab>
+					<uib-tab select="setActiveTab(0)" heading="任务"></uib-tab>
+					<uib-tab select="setActiveTab(1)" heading="成员"></uib-tab>
+					<uib-tab select="setActiveTab(2)" heading="评论"></uib-tab>
 				</uib-tabset>
 			</div>
 		</div>
@@ -150,9 +150,8 @@
 				<uib-tab active="activeTab == 0">
 					<h4 class="smaller lighter green">
 						<i class="ace-icon fa fa-list"></i>
-						Sortable Lists
-					</h4>
-					
+						可排序列表
+					</h4>					
 					<div ng-include="'views/pages/partial/dashboard/tasks.html'"></div>
 				</uib-tab>
 				<uib-tab active="activeTab == 1">
@@ -175,7 +174,7 @@
 		<div class="widget-header">
 			<h4 class="widget-title lighter smaller">
 				<i class="ace-icon fa fa-comment blue"></i>
-				Conversation
+				聊天记录
 			</h4>
 		</div>
 		

@@ -1,98 +1,98 @@
-angular.module('AceApp').controller('DashboardCtrl', function($scope, $http, $timeout, $rootScope) {
-  
-  $scope.alert = {
-	'shown' : true,
-	'close' : function() {
-		$scope.alert.shown = false;
-	}
-  }
+angular.module('AceApp').controller('DashboardCtrl', function ($scope, $http, $timeout, $rootScope) {
 
-  //flot chart options and data
-  $scope.piechart = {
-   'data' : [
-	 { label: "social networks",  data: 38.7, color: "#68BC31"},
-	 { label: "search engines",  data: 24.5, color: "#2091CF"},
-	 { label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
-	 { label: "direct traffic",  data: 18.6, color: "#DA5430"},
-	 { label: "other",  data: 10, color: "#FEE074"}
-   ],
-
-   'options' : {
-	series: {
-		pie: {
-			show: true,
-			tilt:0.8,
-			highlight: {
-				opacity: 0.25
-			},
-			stroke: {
-				color: '#fff',
-				width: 2
-			},
-			startAngle: 2
+	$scope.alert = {
+		'shown': true,
+		'close': function () {
+			$scope.alert.shown = false;
 		}
-	},
-	legend: {
-		show: true,
-		position: "ne", 
-		labelBoxBorderColor: null,
-		margin:[-30,15]
 	}
-	,
-	grid: {
-		hoverable: true,
-		clickable: true
-	}
-  }
- };
 
+	//flot chart options and data
+	$scope.piechart = {
+		'data': [
+			{ label: "社交网络", data: 38.7, color: "#68BC31" },
+			{ label: "搜索引擎", data: 24.5, color: "#2091CF" },
+			{ label: "广告活动", data: 8.2, color: "#AF4E96" },
+			{ label: "直接成交", data: 18.6, color: "#DA5430" },
+			{ label: "其他", data: 10, color: "#FEE074" }
+		],
 
-
- //data for second flot chart
- var d1 = [];
- for (var i = 0; i < Math.PI * 2; i += 0.5) {
-	d1.push([i, Math.sin(i)]);
- }
- var d2 = [];
- for (var i = 0; i < Math.PI * 2; i += 0.5) {
-	d2.push([i, Math.cos(i)]);
- }
- var d3 = [];
- for (var i = 0; i < Math.PI * 2; i += 0.2) {
-	d3.push([i, Math.tan(i)]);
- }
- $scope.saleschart = {
-	'data' : [
-		{ label: "Domains", data: d1 },
-		{ label: "Hosting", data: d2 },
-		{ label: "Services", data: d3 }
-	],
-	'options' : {
-		hoverable: true,
-		shadowSize: 0,
-		series: {
-			lines: { show: true },
-			points: { show: true }
-		},
-		xaxis: {
-			tickLength: 0
-		},
-		yaxis: {
-			ticks: 10,
-			min: -2,
-			max: 2,
-			tickDecimals: 3
-		},
-		grid: {
-			backgroundColor: { colors: [ "#fff", "#fff" ] },
-			borderWidth: 1,
-			borderColor:'#555'
+		'options': {
+			series: {
+				pie: {
+					show: true,
+					tilt: 0.8,
+					highlight: {
+						opacity: 0.25
+					},
+					stroke: {
+						color: '#fff',
+						width: 2
+					},
+					startAngle: 2
+				}
+			},
+			legend: {
+				show: true,
+				position: "ne",
+				labelBoxBorderColor: null,
+				margin: [-30, 15]
+			}
+			,
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
 		}
-	} 
- }
+	};
 
- 
-  
+
+
+	//data for second flot chart
+	var d1 = [];
+	for (var i = 0; i < Math.PI * 2; i += 0.5) {
+		d1.push([i, Math.sin(i)]);
+	}
+	var d2 = [];
+	for (var i = 0; i < Math.PI * 2; i += 0.5) {
+		d2.push([i, Math.cos(i)]);
+	}
+	var d3 = [];
+	for (var i = 0; i < Math.PI * 2; i += 0.2) {
+		d3.push([i, Math.tan(i)]);
+	}
+	$scope.saleschart = {
+		'data': [
+			{ label: "域名", data: d1 },
+			{ label: "主机", data: d2 },
+			{ label: "服务", data: d3 }
+		],
+		'options': {
+			hoverable: true,
+			shadowSize: 0,
+			series: {
+				lines: { show: true },
+				points: { show: true }
+			},
+			xaxis: {
+				tickLength: 0
+			},
+			yaxis: {
+				ticks: 10,
+				min: -2,
+				max: 2,
+				tickDecimals: 3
+			},
+			grid: {
+				backgroundColor: { colors: ["#fff", "#fff"] },
+				borderWidth: 1,
+				borderColor: '#555'
+			}
+		}
+	}
+
+
+
 	//easy pie chart options
 	//values are dynamically loaded, and are inside data/pages/dashboard
 	$scope.easypiechart = {
@@ -123,8 +123,8 @@ angular.module('AceApp').controller('DashboardCtrl', function($scope, $http, $ti
 			size: 30
 		}
 	};
-	
-	
+
+
 	//sparkline options
 	//values are dynamically loaded, and are inside data/pages/dashboard
 	$scope.sparkline = {
@@ -136,43 +136,43 @@ angular.module('AceApp').controller('DashboardCtrl', function($scope, $http, $ti
 		},
 		"earnings": {
 			type: 'bar',
-			barColor: '#FFF' ,
+			barColor: '#FFF',
 			chartRangeMin: 0,
 			height: 18
 		}
 	};
 
-	
-	
-	
-	
- 
- /////
- //the recent tab
- //in Bootstrap we can have tab buttons in one place and tab contents(panes) in another place
- //but seems not the case in Angular UI Bootstrap tabs
- //so we have 2 tabsets and then we hide contents of first one, and tab buttons of second one and correlate them using 'activeTab and 'setActiveTab'
- 
-  $scope.tabShown = false;
-  angular.element('#recent-tab-list').scope().$on('$viewContentLoaded', function () {
-	$timeout(function() {
-		jQuery('#recent-tab-list > .tab-content').unwrap().remove();
-	});
-  });
 
-  angular.element('#recent-tab-pane').scope().$on('$viewContentLoaded', function () {
-	$timeout(function() {
-		jQuery('#recent-tab-pane > .nav-tabs').hide();
-		jQuery('#recent-tab-pane > .tab-content').addClass('padding-8');
-		
-		$scope.tabShown = true;
-	});
-  });
 
-  $scope.activeTab = 0;
-  $scope.setActiveTab = function(index) {
-	 $scope.activeTab = index;
-  }
- ////
-	
+
+
+
+	/////
+	//the recent tab
+	//in Bootstrap we can have tab buttons in one place and tab contents(panes) in another place
+	//but seems not the case in Angular UI Bootstrap tabs
+	//so we have 2 tabsets and then we hide contents of first one, and tab buttons of second one and correlate them using 'activeTab and 'setActiveTab'
+
+	$scope.tabShown = false;
+	angular.element('#recent-tab-list').scope().$on('$viewContentLoaded', function () {
+		$timeout(function () {
+			jQuery('#recent-tab-list > .tab-content').unwrap().remove();
+		});
+	});
+
+	angular.element('#recent-tab-pane').scope().$on('$viewContentLoaded', function () {
+		$timeout(function () {
+			jQuery('#recent-tab-pane > .nav-tabs').hide();
+			jQuery('#recent-tab-pane > .tab-content').addClass('padding-8');
+
+			$scope.tabShown = true;
+		});
+	});
+
+	$scope.activeTab = 0;
+	$scope.setActiveTab = function (index) {
+		$scope.activeTab = index;
+	}
+	////
+
 });

@@ -4,7 +4,7 @@
 </a>
 <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
 	<li class="dropdown-header">
-		<i class="ace-icon fa fa-exclamation-triangle"></i> {{::getCommonData('navbar').notifications.count}} Notifications
+		<i class="ace-icon fa fa-exclamation-triangle"></i> {{::getCommonData('navbar').notifications.count}}项提醒
 	</li>
 
 	<li class="dropdown-content" ace-scroll options="{'size': 200, 'mouseWheelLock': true, 'reset': false}">
@@ -12,7 +12,8 @@
 			<li ng-repeat="notification in ::getCommonData('navbar').notifications.latest">
 				<a href="">
 					<div ng-if="notification.badge" class="clearfix">
-						<span class="pull-left"><i class="btn btn-xs no-hover {{notification['icon-class']}} {{notification.icon}}"></i> {{notification.title}}</span>
+						<span class="pull-left">
+							<i class="btn btn-xs no-hover {{notification['icon-class']}} {{notification.icon}}"></i> {{notification.title}}</span>
 						<span class="pull-right badge {{notification['badge-class']}}">{{notification.badge}}</span>
 					</div>
 					<div ng-if="!notification.badge">
@@ -25,7 +26,7 @@
 
 	<li class="dropdown-footer">
 		<a href="">
-			See all notifications
+			查看所有提醒
 			<i class="ace-icon fa fa-arrow-right"></i>
 		</a>
 	</li>

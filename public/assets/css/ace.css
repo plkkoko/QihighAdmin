@@ -9332,7 +9332,7 @@ input[type=checkbox].ace.ace-switch + .lbl {
 }
 input[type=checkbox].ace.ace-switch + .lbl::before {
   font-family: 'Open Sans';
-  content: "ON\a0\a0\a0\a0\a0\a0\a0\a0\a0OFF";
+  content: "开\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0关";
   color: #999;
   text-shadow: 0 0 0 #999;
   font-weight: normal;
@@ -9392,7 +9392,7 @@ input[type=checkbox].ace.ace-switch:checked + .lbl::after {
   color: #98A0A5;
 }
 input[type=checkbox].ace.ace-switch.ace-switch-2 + .lbl::before {
-  content: "YES\a0\a0\a0\a0\a0\a0\a0\a0\a0NO";
+  content: "是\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0否";
 }
 input[type=checkbox].ace.ace-switch.ace-switch-3 + .lbl::after {
   font-family: FontAwesome;
@@ -9417,7 +9417,7 @@ input[type=checkbox].ace.ace-switch.ace-switch-5 {
 }
 input[type=checkbox].ace.ace-switch.ace-switch-4 + .lbl::before,
 input[type=checkbox].ace.ace-switch.ace-switch-5 + .lbl::before {
-  content: "ON\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0OFF";
+  content: "开\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0关";
   font-size: 12px;
   line-height: 21px;
   height: 24px;
@@ -9467,7 +9467,7 @@ input[type=checkbox].ace.ace-switch.ace-switch-5:checked + .lbl::after {
   color: #848484;
 }
 input[type=checkbox].ace.ace-switch.ace-switch-5 + .lbl::before {
-  content: "YES\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0NO";
+  content: "是\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0否";
 }
 input[type=checkbox].ace.ace-switch.ace-switch-5:checked + .lbl::before {
   text-indent: 8px;
@@ -9532,7 +9532,7 @@ input[type=checkbox].ace.ace-switch.ace-switch-7 + .lbl {
   position: relative;
 }
 input[type=checkbox].ace.ace-switch.ace-switch-7 + .lbl::before {
-  content: "OFF\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0ON";
+  content: "关\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0开";
   font-weight: bolder;
   font-size: 13px;
   line-height: 20px;

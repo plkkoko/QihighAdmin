@@ -2,30 +2,30 @@
  {
 	"name": "Bob Doe",
 	"avatar": "avatar.png",
-	"time": "6 min",
+	"time": "6分钟前",
 	"time-color": "green",
-	"comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis",
+	"comment": "同意，我愿意参与。",
 	"menu": true
  } ,
  {
 	"name": "Jennifer",
 	"avatar": "avatar1.png",
-	"time": "15 min",
+	"time": "15分钟前",
 	"time-color": "blue",
-	"comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis"
+	"comment": "大家一起摸索吧。要有开源精神。"
  } ,
  {
 	"name": "Joe",
 	"avatar": "avatar2.png",
-	"time": "22 min",
+	"time": "22分钟前",
 	"time-color": "orange",
-	"comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis"
+	"comment": "是呀！连个完整的中文教程都没有。"
  } ,
  {
 	"name": "Rita",
 	"avatar": "avatar3.png",
-	"time": "50 min",
+	"time": "50分钟前",
 	"time-color": "red",
-	"comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis"
+	"comment": "这个框架挺炫的，就是上手有点难。"
  }
 ]

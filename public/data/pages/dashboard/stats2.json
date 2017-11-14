@@ -5,8 +5,8 @@
 		"small": true,
 		"dark": true,
 		"progress": "61",
-		"content": ["Task",
-		"Completion"]
+		"content": ["任务",
+		"进度"]
 	},
 	{
 		"id": "earnings",
@@ -14,7 +14,7 @@
 		"small": true,
 		"dark": true,
 		"chart": "[3,4,2,3,4,4,2,2]",
-		"content": ["Earnings",
+		"content": ["盈利",
 		"$32,000"]
 	},
 	{
@@ -22,7 +22,7 @@
 		"small": true,
 		"dark": true,
 		"icon": "fa fa-download",
-		"content": ["Downloads",
+		"content": ["下载量",
 		"1,205"]
 	}
 ]
