@@ -100,6 +100,7 @@ angular.module('AceApp')
 				});
 			}
 		};
+		
 		$rootScope.getCommonData = function (dataName) {
 			return $rootScope.getData(dataName, 'common');
 		};

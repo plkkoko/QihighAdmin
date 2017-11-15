@@ -199,26 +199,26 @@ angular.module('AceApp').controller('FormCtrl', function ($scope, $timeout, $htt
 
 	//Multiselect
 	$scope.selectOptions = [
-		"Cheese",
-		"Tomatoes",
-		"Mozzarella",
-		"Mushrooms",
-		"Pepperoni"
+		"奶酪",
+		"番茄",
+		"意大利干酪",
+		"蘑菇",
+		"意大利辣味香肠"
 	];
 	$scope.multiselectModel = [];
 
 
 	//Select2
-	$scope.availableColors = ['Red', 'Green', 'Blue', 'Yellow', 'Magenta', 'Maroon', 'Umbra', 'Turquoise'];
+	$scope.availableColors = ['红', '绿', '蓝', '黄', '品红', '褐红', '暗黑', '青绿'];
 	$scope.select2Color = null;
 
 
 	///////
 	//file input properties
 	$scope.fileInputOptions1 = {
-		no_file: 'No File ...',
-		btn_choose: 'Choose',
-		btn_change: 'Change',
+		no_file: '没有文件...',
+		btn_choose: '选择',
+		btn_change: '修改',
 		droppable: false,
 		onchange: null,
 		thumbnail: false
@@ -238,7 +238,7 @@ angular.module('AceApp').controller('FormCtrl', function ($scope, $timeout, $htt
 	$scope.$watch('pictureOnly', function (newValue, oldValue) {
 		if (newValue) {
 			$scope.fileInputOptions2 = {
-				'btn_choose': "Drop images here or click to choose",
+				'btn_choose': "拖动图片文件到这里或点击选择按钮",
 				'no_icon': "ace-icon fa fa-picture-o",
 				'allowExt': ["jpeg", "jpg", "png", "gif", "bmp"],
 				'allowMime': ["image/jpg", "image/jpeg", "image/png", "image/gif", "image/bmp"]
@@ -246,7 +246,7 @@ angular.module('AceApp').controller('FormCtrl', function ($scope, $timeout, $htt
 		}
 		else {
 			$scope.fileInputOptions2 = {
-				'btn_choose': "Drop files here or click to choose",
+				'btn_choose': "拖动文件到这里或点击选择按钮",
 				'no_icon': "ace-icon fa fa-cloud-upload",
 				'whitelist_ext': null,
 				'whitelist_mime': null
