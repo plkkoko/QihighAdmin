@@ -4,28 +4,28 @@ angular.module('AceApp').controller('NestableCtrl', ['$scope', function ($scope)
 
   $scope.items = [
     {
-      item: 'a' ,
+      item: 'a项目' ,
       children: []
     },
     {
-      item: 'b' ,
+      item: 'b项目' ,
       children: [
         {
-          item: 'c' ,
+          item: 'c项目' ,
           children: []
         },
         {
-          item: 'd' ,
+          item: 'd项目' ,
           children: []
         }
       ]
     },
     {
-      item: 'e' ,
+      item: 'e项目' ,
       children: []
     },
     {
-      item: 'f' ,
+      item: 'f项目' ,
       children: []
     }
   ];

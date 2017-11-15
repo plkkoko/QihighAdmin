@@ -34,7 +34,7 @@ var app = angular.module('AceApp', [
 	//$stateProvider，ui.router模块中的服务变量
 	//$urlRouterProvider，ui.router模块中的服务变量
 	//$ocLazyLoadProvider，oc.lazyLoad模块中的服务变量
-	.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider/**, cfpLoadingBarProvider*/ ) {
+	.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider /**, cfpLoadingBarProvider*/ ) {
 		//cfpLoadingBarProvider.includeSpinner = true;
 		//设置默认路由
 		$urlRouterProvider.otherwise('/dashboard');
@@ -232,7 +232,7 @@ var app = angular.module('AceApp', [
 
 				templateUrl: 'views/pages/nestable-list.html',
 				controller: 'NestableCtrl',
-				
+
 				resolve: {
 					lazyLoad: ['$ocLazyLoad', function ($ocLazyLoad) {
 						return $ocLazyLoad.load([{
@@ -537,7 +537,7 @@ var app = angular.module('AceApp', [
 						return $ocLazyLoad.load([{
 								serie: true,
 								name: 'calendar',
-								files: ['components/moment/moment.js', 'components/fullcalendar/dist/fullcalendar.js', 'components/angular-ui-calendar/src/calendar.js']
+								files: ['components/moment/moment.js', 'components/fullcalendar/dist/fullcalendar.js', 'components/angular-ui-calendar/src/calendar.js', 'components/fullcalendar/dist/lang/zh-cn.js']
 							},
 
 							{

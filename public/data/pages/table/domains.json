@@ -3,7 +3,7 @@
 		"name": "app.com",
 		"price": "$45",
 		"clicks": "3,330",
-		"update": "Feb 12",
+		"update": "2月12日",
 		"status": "expiring",
 		"selected": false
 	},
@@ -11,7 +11,7 @@
 		"name": "base.com",
 		"price": "$35",
 		"clicks": "2,595",
-		"update": "Feb 18",
+		"update": "2月18日",
 		"status": "registered",
 		"selected": false
 	},
@@ -19,7 +19,7 @@
 		"name": "max.com",
 		"price": "$60",
 		"clicks": "4,400",
-		"update": "Mar 11",
+		"update": "3月11日",
 		"status": "expiring",
 		"selected": false
 	},
@@ -27,7 +27,7 @@
 		"name": "best.com",
 		"price": "$75",
 		"clicks": "6,500",
-		"update": "Apr 03",
+		"update": "4月3日",
 		"status": "flagged",
 		"selected": false
 	},
@@ -35,7 +35,7 @@
 		"name": "pro.com",
 		"price": "$55",
 		"clicks": "4,250",
-		"update": "Jan 21",
+		"update": "1月21日",
 		"status": "registered",
 		"selected": false
 	},
@@ -43,7 +43,7 @@
 		"name": "team.com",
 		"price": "$40",
 		"clicks": "3,200",
-		"update": "Feb 09",
+		"update": "2月9日",
 		"status": "flagged",
 		"selected": false
 	},
@@ -51,7 +51,7 @@
 		"name": "up.com",
 		"price": "$95",
 		"clicks": "8,520",
-		"update": "Feb 22",
+		"update": "2月22日",
 		"status": "sold",
 		"selected": false
 	},
@@ -59,7 +59,7 @@
 		"name": "view.com",
 		"price": "$45",
 		"clicks": "4,100",
-		"update": "Mar 12",
+		"update": "3月12日",
 		"status": "registered",
 		"selected": false
 	},
@@ -67,7 +67,7 @@
 		"name": "nice.com",
 		"price": "$38",
 		"clicks": "3,940",
-		"update": "Feb 12",
+		"update": "2月12日",
 		"status": "sold",
 		"selected": false
 	},
@@ -75,7 +75,7 @@
 		"name": "fine.com",
 		"price": "$25",
 		"clicks": "2,983",
-		"update": "Apr 01",
+		"update": "4月日1日",
 		"status": "expiring",
 		"selected": false
 	},
@@ -83,7 +83,7 @@
 		"name": "good.com",
 		"price": "$50",
 		"clicks": "6,500",
-		"update": "Feb 02",
+		"update": "2月日2日",
 		"status": "flagged",
 		"selected": false
 	},
@@ -91,7 +91,7 @@
 		"name": "great.com",
 		"price": "$55",
 		"clicks": "6,400",
-		"update": "Feb 24",
+		"update": "2月24日",
 		"status": "registered",
 		"selected": false
 	},
@@ -99,7 +99,7 @@
 		"name": "shine.com",
 		"price": "$25",
 		"clicks": "2,200",
-		"update": "Apr 01",
+		"update": "4月1日",
 		"status": "flagged",
 		"selected": false
 	},
@@ -107,7 +107,7 @@
 		"name": "rise.com",
 		"price": "$42",
 		"clicks": "3,900",
-		"update": "Feb 01",
+		"update": "2月1日",
 		"status": "sold",
 		"selected": false
 	},
@@ -115,7 +115,7 @@
 		"name": "above.com",
 		"price": "$35",
 		"clicks": "3,420",
-		"update": "Mar 12",
+		"update": "3月12日",
 		"status": "expiring",
 		"selected": false
 	},
@@ -123,7 +123,7 @@
 		"name": "share.com",
 		"price": "$30",
 		"clicks": "3,200",
-		"update": "Feb 11",
+		"update": "2月11日",
 		"status": "sold",
 		"selected": false
 	},
@@ -131,7 +131,7 @@
 		"name": "fair.com",
 		"price": "$35",
 		"clicks": "3,900",
-		"update": "Mar 26",
+		"update": "3月26日",
 		"status": "flagged",
 		"selected": false
 	},
@@ -139,7 +139,7 @@
 		"name": "year.com",
 		"price": "$48",
 		"clicks": "3,990",
-		"update": "Feb 15",
+		"update": "2月15日",
 		"status": "expiring",
 		"selected": false
 	},
@@ -147,7 +147,7 @@
 		"name": "day.com",
 		"price": "$55",
 		"clicks": "5,600",
-		"update": "Jan 29",
+		"update": "1月29日",
 		"status": "sold",
 		"selected": false
 	},
@@ -155,7 +155,7 @@
 		"name": "light.com",
 		"price": "$40",
 		"clicks": "3,100",
-		"update": "Feb 17",
+		"update": "2月17日",
 		"status": "registered",
 		"selected": false
 	},
@@ -163,7 +163,7 @@
 		"name": "sight.com",
 		"price": "$58",
 		"clicks": "6,100",
-		"update": "Feb 19",
+		"update": "2月19日",
 		"status": "flagged",
 		"selected": false
 	},
@@ -171,7 +171,7 @@
 		"name": "right.com",
 		"price": "$50",
 		"clicks": "4,400",
-		"update": "Apr 01",
+		"update": "4月1日",
 		"status": "expiring",
 		"selected": false
 	},
@@ -179,7 +179,7 @@
 		"name": "once.com",
 		"price": "$20",
 		"clicks": "1,400",
-		"update": "Apr 04",
+		"update": "4月4日",
 		"status": "sold",
 		"selected": false
 	}

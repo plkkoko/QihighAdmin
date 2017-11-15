@@ -1,17 +1,18 @@
 <div class="page-header">
-	<h1>User Profile Page <small><i class="ace-icon fa fa-angle-double-right"></i> with inline editable feature</small></h1>
+	<h1>个人配置
+		<small>
+			<i class="ace-icon fa fa-angle-double-right"></i>具有内联编辑功能</small>
+	</h1>
 </div>
 
 
 <div class="clearfix">
 	<uib-alert type="success" close="alert.close()" ng-if="alert.shown" class="no-margin">
-		<i class="ace-icon fa fa-umbrella bigger-120 blue"></i> Click on the image below or on profile fields to edit them
+		<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>单击下面的图像或配置文件字段来编辑它们。
 	</uib-alert>
 </div>
 
-
 <div class="hr dotted"></div>
-
 
 <div id="user-profile-1" class="user-profile row">
 
@@ -19,66 +20,68 @@
 		<div>
 			<!-- #section:pages/profile.picture -->
 			<span class="profile-picture">
-				<img id="avatar" editable options="avatar.options" ng-model="avatar.value" class="img-responsive" alt="Alex's Avatar" ng-src="{{ace.path.assets}}/avatars/profile-pic.jpg" />
+				<img id="avatar" editable options="avatar.options" ng-model="avatar.value" class="img-responsive" alt="Alex's Avatar" ng-src="{{ace.path.assets}}/avatars/profile-pic.jpg"
+				/>
 			</span>
 			<!-- /section:pages/profile.picture -->
-			
+
 			<div class="space-4"></div>
-			
+
 			<div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right" uib-dropdown>
-			    <a href="" uib-dropdown-toggle class="user-title-label dropdown-toggle">
+				<a href="" uib-dropdown-toggle class="user-title-label dropdown-toggle">
 					<i class="ace-icon fa fa-circle light-green"></i>
-					&nbsp;<span class="white">Alex M. Doe</span>
+					&nbsp;
+					<span class="white">Alex M. Doe</span>
 				</a>
 				<ul uib-dropdown-menu class="align-left dropdown-menu dropdown-caret dropdown-lighter">
 					<li class="dropdown-header">
-						Change Status
+						修改状态
 					</li>
 					<li>
 						<a href="">
 							<i class="ace-icon fa fa-circle green"></i>&nbsp;
-							<span class="green">Available</span>
+							<span class="green">在线</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<i class="ace-icon fa fa-circle red"></i>&nbsp;
-							<span class="red">Busy</span>
+							<span class="red">忙碌</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<i class="ace-icon fa fa-circle grey"></i>&nbsp;
-							<span class="grey">Invisible</span>
+							<span class="grey">隐身</span>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		
+
 		<div class="space-6"></div>
-		
+
 		<!-- #section:pages/profile.contact -->
 		<div class="profile-contact-info">
 			<div class="profile-contact-links align-left">
 				<a href="" class="btn btn-link">
 					<i class="ace-icon fa fa-plus-circle bigger-120 green"></i>
-					Add as a friend
+					加为好友
 				</a>
 
 				<a href="" class="btn btn-link">
 					<i class="ace-icon fa fa-envelope bigger-120 pink"></i>
-					Send a message
+					发送消息
 				</a>
 
 				<a href="" class="btn btn-link">
 					<i class="ace-icon fa fa-globe bigger-125 blue"></i>
-					www.alexdoe.com
+					个人网页
 				</a>
 			</div>
-			
+
 			<div class="space-6"></div>
-			
+
 			<div class="profile-social-links align-center">
 				<a href="" class="tooltip-info" title="" data-original-title="Visit my Facebook">
 					<i class="middle ace-icon fa fa-facebook-square fa-2x blue"></i>
@@ -92,27 +95,24 @@
 			</div>
 		</div>
 		<!-- /section:pages/profile.contact -->
-		
+
 		<div class="hr hr12 dotted"></div>
 
 		<!-- #section:custom/extra.grid -->
 		<div class="clearfix">
 			<div class="grid2">
 				<span class="bigger-175 blue">25</span>
-				<br />
-				Followers
+				<br /> 粉丝
 			</div>
-			
+
 			<div class="grid2">
 				<span class="bigger-175 blue">12</span>
-				<br />
-				Following
+				<br /> 关注
 			</div>
 		</div>
 		<!-- /section:custom/extra.grid -->
 		<div class="hr hr16 dotted"></div>
 	</div>
-
 
 	<div class="col-xs-12 col-sm-9">
 		<div class="center">
@@ -122,7 +122,7 @@
 				</span>
 				<br>
 				<span class="line-height-1 smaller-90">
-					Views
+					访问
 				</span>
 			</span>
 			<span class="btn btn-app btn-sm btn-yellow no-hover">
@@ -131,7 +131,7 @@
 				</span>
 				<br>
 				<span class="line-height-1 smaller-90">
-					Followers
+					粉丝
 				</span>
 			</span>
 			<span class="btn btn-app btn-sm btn-pink no-hover">
@@ -140,7 +140,7 @@
 				</span>
 				<br>
 				<span class="line-height-1 smaller-90">
-					Projects
+					项目
 				</span>
 			</span>
 			<span class="btn btn-app btn-sm btn-grey no-hover">
@@ -149,7 +149,7 @@
 				</span>
 				<br>
 				<span class="line-height-1 smaller-90">
-					Reviews
+					回访
 				</span>
 			</span>
 			<span class="btn btn-app btn-sm btn-success no-hover">
@@ -158,7 +158,7 @@
 				</span>
 				<br>
 				<span class="line-height-1 smaller-90">
-					Albums
+					专题
 				</span>
 			</span>
 			<span class="btn btn-app btn-sm btn-primary no-hover">
@@ -167,72 +167,72 @@
 				</span>
 				<br>
 				<span class="line-height-1 smaller-90">
-					Contacts
+					联络
 				</span>
 			</span>
 		</div>
 
 		<div class="space-12"></div>
-		
+
 		<!-- #section:pages/profile.info -->
 		<div class="profile-user-info profile-user-info-striped">
 			<div class="profile-info-row">
 				<div class="profile-info-name">
-					Username
+					姓名
 				</div>
-				
+
 				<div class="profile-info-value">
 					<span editable options="username.options" ng-model="username.value" ng-bind="username.value"></span>
 				</div>
 			</div>
-			
+
 			<div class="profile-info-row">
 				<div class="profile-info-name">
-					Location
+					地址
 				</div>
-				
+
 				<div class="profile-info-value">
 					<i class="ace-icon orange fa fa-map-marker"></i>
 					<span editable options="country.options" ng-model="country.value"></span>
 					<span editable options="city.options" ng-model="city.value"></span>
 				</div>
 			</div>
-			
+
 			<div class="profile-info-row">
 				<div class="profile-info-name">
-					Age
+					年龄
 				</div>
-				
+
 				<div class="profile-info-value">
 					<span editable options="age.options" ng-model="age.value" ng-bind="age.value"></span>
 				</div>
 			</div>
-			
+
 			<div class="profile-info-row">
 				<div class="profile-info-name">
-					Signup
+					注册时间
 				</div>
-				
+
 				<div class="profile-info-value">
 					<span editable options="signup.options" ng-model="signup.value" ng-bind="signup.value"></span>
 				</div>
 			</div>
-			
+
 			<div class="profile-info-row">
 				<div class="profile-info-name">
-					Login
+					最近登录时间
 				</div>
-				
+
 				<div class="profile-info-value">
 					<span editable options="login.options" ng-model="login.value" ng-bind="login.value"></span>
 				</div>
 			</div>
-			
+
 			<div class="profile-info-row">
 				<div class="profile-info-name">
-					About
+					标签
 				</div>
-				
+
 				<div class="profile-info-value">
 					<span editable options="about.options" ng-model="about.value" ng-bind="about.value"></span>
 				</div>
@@ -241,38 +241,51 @@
 		<!-- /section:pages/profile.info -->
 
 		<div class="space-20"></div>
-		
+
 		<div widget-box class="widget-box transparent" wb-reloading='is_activity_reloading' on-reload='activity_reload()'>
 			<div class="widget-header widget-header-small">
-				<h4 class="widget-title blue smaller"><i class="ace-icon fa fa-rss orange"></i> Recent Activities</h4>
+				<h4 class="widget-title blue smaller">
+					<i class="ace-icon fa fa-rss orange"></i>最新记录</h4>
 				<div class="widget-toolbar action-buttons">
-					<a href="" data-action="reload"><i class="ace-icon fa fa-refresh blue"></i></a>&nbsp;
-					<a href="" class="pink"><i class="ace-icon fa fa-trash-o"></i></a>
+					<a href="" data-action="reload">
+						<i class="ace-icon fa fa-refresh blue"></i>
+					</a>&nbsp;
+					<a href="" class="pink">
+						<i class="ace-icon fa fa-trash-o"></i>
+					</a>
 				</div>
 			</div>
-			
+
 			<div class="widget-body">
-			 <div class="widget-main padding-8">
-				<!-- #section:pages/profile.feed -->
-				<div ace-scroll options="activityScroll">
-				 <div ng-repeat="activity in ::getData('activity')" class="profile-feed">
-					<div ng-repeat="item in activity" class="profile-activity clearfix">
-						<div>
-							<img ng-if="item.avatar" class="pull-left" alt="{{item.name}}'s avatar" ng-src="{{ace.path.assets}}/avatars/{{item.avatar}}" />
-							<i ng-if="item.icon" class="pull-left thumbicon {{item.icon}} no-hover"></i>
-							<a class="user" href="" ng-bind="item.name"></a>
-							<span ng-bind-html="item.action"></span>
-							<div class="time"><i class="ace-icon fa fa-clock-o bigger-110"></i> <span ng-bind="item.time"></span></div>
-						</div>
-						<div class="tools action-buttons">
-							<a href="" class="blue"><i class="ace-icon fa fa-pencil bigger-125"></i></a>
-							<a href="" class="red"><i class="ace-icon fa fa-times bigger-125"></i></a>
+				<div class="widget-main padding-8">
+					<!-- #section:pages/profile.feed -->
+					<div ace-scroll options="activityScroll">
+						<div ng-repeat="activity in ::getData('activity')" class="profile-feed">
+							<div ng-repeat="item in activity" class="profile-activity clearfix">
+								<div>
+									<img ng-if="item.avatar" class="pull-left" alt="{{item.name}}'s avatar" ng-src="{{ace.path.assets}}/avatars/{{item.avatar}}"
+									/>
+									<i ng-if="item.icon" class="pull-left thumbicon {{item.icon}} no-hover"></i>
+									<a class="user" href="" ng-bind="item.name"></a>
+									<span ng-bind-html="item.action"></span>
+									<div class="time">
+										<i class="ace-icon fa fa-clock-o bigger-110"></i>
+										<span ng-bind="item.time"></span>
+									</div>
+								</div>
+								<div class="tools action-buttons">
+									<a href="" class="blue">
+										<i class="ace-icon fa fa-pencil bigger-125"></i>
+									</a>
+									<a href="" class="red">
+										<i class="ace-icon fa fa-times bigger-125"></i>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
-				 </div>
+					<!-- /section:pages/profile.feed -->
 				</div>
-				<!-- /section:pages/profile.feed -->
-			 </div>
 			</div>
 		</div>
 
@@ -281,12 +294,9 @@
 		<div class="center">
 			<button type="button" class="btn btn-sm btn-primary btn-white btn-round">
 				<i class="ace-icon fa fa-rss bigger-150 middle orange2"></i>
-				<span class="bigger-110">View more activities</span>
+				<span class="bigger-110">查看更多记录</span>
 				<i class="icon-on-right ace-icon fa fa-arrow-right"></i>
 			</button>
 		</div>
 	</div>
-
 </div>
-
-

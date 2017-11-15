@@ -11262,7 +11262,8 @@
 				 *      } );
 				 *    } );
 				 */
-				"sFirst": "First",
+				//"sFirst": "First",
+				"sFirst": "第一页",
 	
 	
 				/**
@@ -11285,7 +11286,8 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLast": "Last",
+				//"sLast": "Last",
+				"sLast": "最后一页",
 	
 	
 				/**
@@ -11308,7 +11310,8 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				//"sNext": "Next",
+				"sNext": "下一页",
 	
 	
 				/**
@@ -11331,7 +11334,8 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				//"sPrevious": "Previous"
+				"sPrevious": "上一页"
 			},
 	
 			/**
@@ -11386,7 +11390,8 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			//"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "第 _START_ 到 _END_ 条 共 _TOTAL_ 条",
 	
 	
 			/**
@@ -11407,7 +11412,8 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			//"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			"sInfoEmpty": "未找到记录",
 	
 	
 			/**
@@ -11429,8 +11435,8 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoFiltered": "(filtered from _MAX_ total entries)",
-	
+			//"sInfoFiltered": "(filtered from _MAX_ total entries)",
+			"sInfoFiltered": "（从总计 _MAX_ 条记录中检索）",
 	
 			/**
 			 * If can be useful to append extra information to the info string at times,
@@ -11627,7 +11633,8 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Search:",
+			//"sSearch": "Search:",
+			"sSearch": "查询：",
 	
 	
 			/**

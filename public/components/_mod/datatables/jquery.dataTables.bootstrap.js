@@ -5,7 +5,8 @@ $.extend( true, $.fn.dataTable.defaults, {
 		"t"+
 		"<'row'<'col-xs-6'i><'col-xs-6'p>>",
 	"oLanguage": {
-		"sLengthMenu": "Display _MENU_ records"
+		//"sLengthMenu": "Display _MENU_ records"
+		"sLengthMenu": "每页 _MENU_ 条"
 	}
 } );
 
