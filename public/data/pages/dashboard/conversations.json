@@ -1,0 +1,38 @@
+[
+ {
+ "name" : "Alexa",
+ "avatar" : "avatar1.png",
+ "time" : "4秒前",
+ "time-color" : "green",
+ "message" : "大家好！"
+ } ,
+ {
+ "name" : "John",
+ "avatar" : "avatar.png",
+ "time" : "38秒前",
+ "time-color" : "blue",
+ "message" : "欢迎！欢迎！"
+ } ,
+ {
+ "name" : "Bob",
+ "avatar" : "user.jpg",
+ "admin" : true,
+ "time" : "2分钟前",
+ "time-color" : "orange",
+ "message" : "感谢大家尝试使用本框架！"
+ } ,
+ {
+ "name" : "Jim",
+ "avatar" : "avatar4.png",
+ "time" : "3分钟前",
+ "time-color" : "grey",
+ "message" : "有谁能解答问题吗？"
+ } ,
+ {
+ "name" : "Alexa",
+ "avatar" : "avatar1.png",
+ "time" : "4分钟前",
+ "time-color" : "green",
+ "message" : "请问这个框架该怎么玩？"
+ }
+]

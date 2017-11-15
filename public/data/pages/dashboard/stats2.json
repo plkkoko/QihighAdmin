@@ -1,0 +1,28 @@
+[
+	{
+		"id": "task-completion",
+		"color": "green",
+		"small": true,
+		"dark": true,
+		"progress": "61",
+		"content": ["任务",
+		"进度"]
+	},
+	{
+		"id": "earnings",
+		"color": "blue",
+		"small": true,
+		"dark": true,
+		"chart": "[3,4,2,3,4,4,2,2]",
+		"content": ["盈利",
+		"$32,000"]
+	},
+	{
+		"color": "grey",
+		"small": true,
+		"dark": true,
+		"icon": "fa fa-download",
+		"content": ["下载量",
+		"1,205"]
+	}
+]

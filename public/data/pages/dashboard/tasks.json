@@ -1,0 +1,34 @@
+[
+	{
+		"id": "customer-support",
+		"color": "orange",
+		"title": "回复客户问题",
+		"progress": 42
+	},
+	{
+		"color": "red",
+		"title": "修复Bug",
+		"toolbar": true
+	},
+	{
+		"color": "default",
+		"title": "增加新功能",
+		"menu": true
+	},
+	{
+		"color": "blue",
+		"title": "更新模板脚本"
+	},
+	{
+		"color": "grey",
+		"title": "添加新的皮肤"
+	},
+	{
+		"color": "green",
+		"title": "更新服务器软件"
+	},
+	{
+		"color": "pink",
+		"title": "清理"
+	}
+]

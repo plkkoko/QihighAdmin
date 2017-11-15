@@ -1,0 +1,51 @@
+<div class="page-header">
+  <h1>基于Angular Bootstrap modal的内容边框窗口</h1>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <button type="button" class="btn btn-primary btn-white btn-bold btn-round" ng-click="openAside('top', 'vertical')">
+      顶部
+    </button>
+    <button type="button" class="btn btn-info btn-white btn-bold btn-round" ng-click="openAside('bottom', 'vertical')">
+      底部
+    </button>
+    <button type="button" class="btn btn-default btn-white btn-bold btn-round" ng-click="openAside('right', 'horizontal')">
+      右边
+    </button>
+    <button type="button" class="btn btn-danger btn-white btn-bold btn-round" ng-click="openAside('left', 'horizontal')">
+      左边
+    </button>
+    <script type="text/ng-template" id="aside-vertical.html">
+      <div class="modal-header">
+        <div class="container">
+          <h3 class="modal-title">标题（横向窗口、顶部或底部）</h3>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          自定义内容和元素
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="container">
+          <button class="btn btn-primary btn-sm" ng-click="ok($event)">确认</button>
+          <button class="btn btn-default  btn-sm" ng-click="cancel($event)">取消</button>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/ng-template" id="aside-horizontal.html">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          标题（纵向窗口、左边或右边）
+          <button class="close" type="button" ng-click="cancel($event)">&times;</button>
+        </h3>
+      </div>
+      <div class="modal-body">
+        自定义内容和元素
+      </div>
+    </script>
+  </div>
+</div>

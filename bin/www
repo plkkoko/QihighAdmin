@@ -1,0 +1,107 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+//引入初始化后的express对象app，具体对象文件为根目录下的app.js
+var app = require('../app.js');
+//引入fs模块，用于读取https协议的私钥文件，及证书文件
+var fs = require('fs');
+//引入debug模块，用于debug调试信息
+var debug = require('debug')('wwwapp:server');
+//引入https模块，用于启动https服务
+var https = require('https');
+//引入配置文件（使用其中的私钥及证书的文件存放路径）
+var config = require('../private/config.js')
+
+//同步方法读取私钥文件，并赋值变量
+var privateKey = fs.readFileSync(config.cert.keypath, 'utf8');
+//同步方法读取证书文件，并赋值变量
+var certificate = fs.readFileSync(config.cert.certpath, 'utf8');
+//将私钥和证书信息组装成配置环境变量
+var credentials = {
+  key: privateKey,
+  cert: certificate
+};
+
+/**
+ * Get port from config and store in Express.
+ * 从配置文件中获取端口号，并设置在app对象中。如未配置端口号，则使用443
+ */
+var port = normalizePort(config.PORT || '443');
+app.set('port', port);
+
+/**
+ * Create HTTPS server.
+ * 创建https服务器对象。
+ */
+var server = https.createServer(credentials, app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ * 开启监听服务，并设置相关事件触发的回调函数
+ */
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ * 将端口参数标准化为数字、字符串或false。
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTPS server "error" event.
+ * 监听异常事件处理函数
+ */
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string' ?
+    'Pipe ' + port :
+    'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ * 监听启动后的处理函数
+ */
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string' ?
+    'pipe ' + addr :
+    'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
