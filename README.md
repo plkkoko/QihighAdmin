@@ -7,7 +7,7 @@
 
 [master](https://github.com/marbleqi/QihighAdmin/tree/master)
 
-：存放项目说明文件。
+主发布分支。
 
 [dev0.1](https://github.com/marbleqi/QihighAdmin/tree/dev0.1)
 
